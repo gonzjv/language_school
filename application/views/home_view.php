@@ -1,19 +1,4 @@
-<html>
-    <head>
-        <title><?php echo $title; ?></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--meta property for sharing social networks-->
-        <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Your Website Title" />
-        <meta property="og:description"   content="Your description" />
-        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-        <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="https://kit.fontawesome.com/6cfa4c0aa7.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
+
         <div class="wrap">
             <div class="container">
                 <!--<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; opacity: .8">-->
@@ -90,17 +75,3 @@
     <script src="./js/jquery-3.3.1.slim.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
     <script src="./js/bootstrap.min.js"></script>
-    <h1><?php echo $heading; ?></h1>
-
-    <h3>My Todo List</h3>
-
-    <ul>
-        <?php foreach ($todo_list as $item): ?>
-
-            <li><?php echo $item; ?></li>
-
-        <?php endforeach; ?>
-    </ul>
-
-</body>
-</html>
