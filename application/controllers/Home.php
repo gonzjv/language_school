@@ -12,9 +12,4 @@ class Home extends CI_Controller {
         $this->load->view('home_view', $data);
         $this->load->view('footer_view', $data);
     }
-
-    public function comments() {
-        echo 'Look at this!';
-    }
-
 }
