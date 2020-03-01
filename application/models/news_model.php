@@ -8,8 +8,8 @@ class News_model extends CI_Model {
 
         public function get_last_ten_entries()
         {
-                $query = $this->db->get('user', 10);
-                return $query->result();
+                $query = $this->db->get('user');
+                return $query->result_array();
         }
    
 }
