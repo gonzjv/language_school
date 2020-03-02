@@ -6,7 +6,7 @@ class News extends CI_Controller {
         $this->load->database();
         $this->load->model('news_model');
 
-//        $data['title'] = "Language school";
+        $data['title'] = "Language school";
         $data['news'] = $this->news_model->get_last_ten_entries();
 //        var_dump($data);
 //        foreach ($data as $row) {
