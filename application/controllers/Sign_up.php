@@ -6,10 +6,11 @@ class Sign_up extends CI_Controller {
         $this->load->helper('form');
         $this->load->database();
         $this->load->helper('url');
-        if (isset($_POST['first_name'])) {
-            $this->load->model('insert_model');
-            $this->insert_model->insert_entry();
-        }
+//
+//        if (isset($_POST['first_name'])) {
+//            $this->load->model('insert_model');
+//            $this->insert_model->insert_entry();
+//        }
         $data['title'] = "Sign up";
 
 
