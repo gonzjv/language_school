@@ -13,7 +13,9 @@ class Insert_model extends CI_Model {
     public function insert_entry() {
         $data_input = array(
             'name' => $this->input->post('name'),
-            'surname' => $this->input->post('surname'));
+            'surname' => $this->input->post('surname'),
+            'email' => $this->input->post('email')
+        );
         $this->db->insert('user', $data_input);
     }
 

@@ -1,13 +1,10 @@
-<?php
-echo validation_errors();
-echo form_open('form');
-?>
+<?php echo form_open('form'); ?>
 <div class="row">
     <div class="col-md-4">
         <?php
         echo form_label('', 'name');
         $data = array(
-            'name' => 'first_name',
+            'name' => 'name',
             'class' => 'form-control',
             'placeholder' => 'First name'
         );
@@ -20,7 +17,7 @@ echo form_open('form');
         <?php
         echo form_label('', 'surname');
         $data = array(
-            'name' => 'last_name',
+            'name' => 'surname',
             'class' => 'form-control',
             'placeholder' => 'Last name'
         );
@@ -28,17 +25,26 @@ echo form_open('form');
         ?>
     </div>
 </div>
-
-<div class="background">
-    <h4>
-        <?php if (isset($signUpError)): ?>
-            <p><?php htmlout($signUpError); ?></p>
-        <?php endif; ?>
-    </h4>
+<div class="row">
+    <div class="col-md-4">
+        <?php
+        echo form_label('', 'email');
+        $data = array(
+            'name' => 'email',
+            'class' => 'form-control',
+            'placeholder' => 'Email'
+        );
+        echo form_input($data);
+        ?>
+    </div>
+</div>
+<div class="row text-warning">
+    <div class="col-md-4">
+        <?php echo validation_errors(); ?>
+    </div>
 </div>
 <div>
-    <!--<input type="hidden" name="action" value="sign_up">-->
-    <button type="submit" class="btn btn-primary btn-sm" >Submit</button>
+    <button type="submit" class="btn btn-warning btn-sm mt-3" >Submit</button>
 </div>
 </form>
 </div>

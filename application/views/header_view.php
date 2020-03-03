@@ -17,7 +17,7 @@
         <div class="wrap">
             <div class="container">
                 <!--<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; opacity: .8">-->
-                <nav class="navbar navbar-expand-lg navbar-light background">
+                <nav class="navbar navbar-expand-lg navbar-light background rounded-bottom">
                     <a class="navbar-brand mx-2" href="./">
                         <!--<img src="./img/logo_car.png" width="200" height="57" alt="">-->
                         <div class="lead text-dark">

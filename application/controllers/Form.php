@@ -10,12 +10,19 @@ class Form extends CI_Controller {
 
         $data['title'] = "Form";
 
-        $this->form_validation->set_rules('name', 'Username', 'required');
-        $this->form_validation->set_rules('surname', 'Username', 'required');
+       
+        $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('surname', 'Surname', 'required');
 //        $this->form_validation->set_rules('password', 'Password', 'required', array('required' => 'You must provide a %s.')
 //        );
 //        $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required');
 //        $this->form_validation->set_rules('email', 'Email', 'required');
+         $this->form_validation->set_rules(
+                'email', 'Email', 'required|min_length[5]|max_length[12]|is_unique[user.email]', array(
+            'required' => 'You have not provided %s.',
+            'is_unique' => 'This %s already exists.'
+                )
+        );
 
 
         if ($this->form_validation->run() == FALSE) {

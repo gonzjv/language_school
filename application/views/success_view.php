@@ -1,12 +1,18 @@
-<html>
-    <head>
-        <title>My Form</title>
-    </head>
-    <body>
-
-        <h3>Your form was successfully submitted!</h3>
-
+<div class="row ">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 text-success text-center background rounded">
+        <h3>Your membership was successfully submitted! 🎉 </h3>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+<div class="row text-light ">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
         <p><?php echo anchor('sign_up', 'Try it again!'); ?></p>
-
-    </body>
-</html>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
