@@ -32,7 +32,9 @@
                             <!--<a class="nav-item nav-link active url" href="./index.php">Главная <span class="sr-only">(current)</span></a>-->
                             <a class="nav-item nav-link url" href="?activities">Scheduled activities</a>
                             <a class="nav-item nav-link url" href="?team">Our team</a>
-                            <a class="nav-item nav-link url" href="./news">News</a>
+                            <!--<a class="nav-item nav-link url" href="./news">News</a>-->
+                            <?php echo anchor('news', 'News', 'class="nav-item nav-link url"');?>
+                            <!--Prints: <a href="http://example.com/index.php/news/local/123" title="News title">My News</a>-->
                         </div>  
                     </div>
                 </nav>
