@@ -16,14 +16,6 @@
             <p><a href="<?php echo site_url('news/' . $news_item['slug']); ?>">View article</a></p>
 
         <?php endforeach; ?>
-        <!--<ul>-->
-        <?php
-//                    var_dump($name);
-//                    foreach ($news as $item): 
-        ?>
-                <!--<li><?php // echo $item['name']?></li>-->
-<?php // endforeach;  ?>
-        <!--</ul>-->
     </div>
 </div>
 </div>
