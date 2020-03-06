@@ -21,7 +21,7 @@
                     <a class="navbar-brand mx-2" href="./">
                         <!--<img src="./img/logo_car.png" width="200" height="57" alt="">-->
                         <div class="lead text-dark">
-                            <div>Language school</div> 
+                            <div>🌍 Language school</div> 
                         </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav font-weight-bold ml-10">
                             <!--<a class="nav-item nav-link active url" href="./index.php">Главная <span class="sr-only">(current)</span></a>-->
-                            <a class="nav-item nav-link url" href="?activities">Scheduled activities</a>
-                            <a class="nav-item nav-link url" href="?team">Our team</a>
+                            <a class="nav-item nav-link url" href="?activities">🚴‍♂️ Scheduled activities</a>
+                            <a class="nav-item nav-link url" href="?team">🧙 Our team</a>
                             <!--<a class="nav-item nav-link url" href="./news">News</a>-->
-                            <?php echo anchor('news', 'News', 'class="nav-item nav-link url"');?>
+                            <?php echo anchor('news', '🗞 News', 'class="nav-item nav-link url"');?>
                             <!--Prints: <a href="http://example.com/index.php/news/local/123" title="News title">My News</a>-->
                         </div>  
                     </div>

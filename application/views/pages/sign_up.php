@@ -38,6 +38,32 @@
         ?>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-4">
+        <?php
+        echo form_label('', 'password');
+        $data = array(
+            'name' => 'password',
+            'class' => 'form-control',
+            'placeholder' => 'Password'
+        );
+        echo form_input($data);
+        ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <?php
+        echo form_label('', 'passconf');
+        $data = array(
+            'name' => 'passconf',
+            'class' => 'form-control',
+            'placeholder' => 'Password Confirmation'
+        );
+        echo form_input($data);
+        ?>
+    </div>
+</div>
 <div class="row text-warning">
     <div class="col-md-4">
         <?php echo validation_errors(); ?>
