@@ -5,6 +5,7 @@ class Form extends CI_Controller {
     public function index() {
         $this->load->helper('form');
         $this->load->helper('url');
+        $this->load->helper('security');
         $this->load->database();
         $this->load->library('form_validation');
 
@@ -28,10 +29,8 @@ class Form extends CI_Controller {
             $this->load->view('pages/sign_up');
             $this->load->view('templates/footer', $data);
         } else {
-            if (isset($_POST['name'])) {
-                $this->load->model('insert_model');
-                $this->insert_model->insert_entry();
-            }
+            $this->load->model('insert_model');
+            $this->insert_model->insert_entry();
             $this->load->view('templates/header', $data);
             $this->load->view('pages/success');
             $this->load->view('templates/footer', $data);
