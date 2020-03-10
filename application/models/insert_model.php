@@ -5,11 +5,11 @@ class Insert_model extends CI_Model {
     public $name;
     public $surname;
 
-//        public function get_last_ten_entries()
-//        {
-//                $query = $this->db->get('entries', 10);
-//                return $query->result();
-//        }
+    public function get_user_info($email) {
+        $query = $this->db->get_where('user', array('email' => $email));
+        return $query->row_array();
+    }
+
     public function insert_entry() {
         $data_input = array(
             'name' => $this->input->post('name'),

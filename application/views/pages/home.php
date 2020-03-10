@@ -1,3 +1,4 @@
+<?php echo form_open('login'); ?>
 <div class="row">
     <div class="col-md-3">
         <?php
@@ -24,13 +25,17 @@
         ?>
     </div>
 </div>
+<div class="row text-warning">
+    <div class="col-md-4">
+        <?php echo validation_errors(); ?>
+    </div>
+</div>
 <div class="row">
-    <div class="col-md-3">
-        <?php echo form_open('sign_up'); ?>
+    <div class="col-md-4">
         <div class="ml-2 mt-4">
             <!--<input type="hidden" name="action" value="reg">-->
             <button type="submit" class="btn btn-outline-warning">Start your journey ✈️</button>
-        <?php echo anchor('sign_up', 'or Sign Up', 'class=""'); ?>
+            <?php echo anchor('sign_up', 'or Sign Up', 'class=""'); ?>
         </div>
     </div>
     <div class="col-md-3 mt-4">
