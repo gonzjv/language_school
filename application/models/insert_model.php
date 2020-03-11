@@ -20,14 +20,8 @@ class Insert_model extends CI_Model {
         $this->db->insert('user', $data_input);
     }
 
-//        public function update_entry()
-//        {
-//                $this->title    = $_POST['title'];
-//                $this->content  = $_POST['content'];
-//                $this->date     = time();
-//
-//                $this->db->update('entries', $this, array('id' => $_POST['id']));
-//        }
+    
+
 }
 
 ?>

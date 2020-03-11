@@ -2,12 +2,16 @@
 
 class Login extends CI_Controller {
 
-    public function index() {
+    public function __construct() {
+        parent::__construct();
+        $this->load->library('session');
         $this->load->helper('url');
+    }
+
+    public function index() {
         $this->load->helper('security');
         $this->load->database();
         $this->load->library('form_validation');
-        $this->load->library('session');
 
         $data['title'] = "Form";
 
@@ -36,6 +40,17 @@ class Login extends CI_Controller {
             $this->load->view('pages/home');
             $this->load->view('templates/footer', $data);
         }
+    }
+
+    public function session_unset() {
+        $this->session->unset_userdata('name');
+        $this->session->unset_userdata('surname');
+        $this->session->unset_userdata('email');
+        redirect('/');
+//        $data['title'] = "Home";
+//        $this->load->view('templates/header', $data);
+//        $this->load->view('pages/home');
+//        $this->load->view('templates/footer', $data);
     }
 
 }
