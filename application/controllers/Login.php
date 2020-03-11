@@ -7,6 +7,7 @@ class Login extends CI_Controller {
         $this->load->helper('security');
         $this->load->database();
         $this->load->library('form_validation');
+        $this->load->library('session');
 
         $data['title'] = "Form";
 
@@ -25,7 +26,10 @@ class Login extends CI_Controller {
             echo $password;
             $data['user_info'] = $this->insert_model->get_user_info($email);
             if (password_verify($password, $data['user_info']['password'])) {
-                echo'$email is logged in';
+                $this->session->name = $data['user_info']['name'];
+                $this->session->surname = $data['user_info']['surname'];
+                $this->session->email = $data['user_info']['email'];
+                echo $this->session->name . ' from session';
             }
 //            print_r($data);
             $this->load->view('templates/header', $data);
