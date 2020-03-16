@@ -9,9 +9,10 @@ class Login extends CI_Controller {
     }
 
     public function index() {
+        $this->load->library('form_validation');
+        $this->load->helper('html');
         $this->load->helper('security');
         $this->load->database();
-        $this->load->library('form_validation');
 
         $data['title'] = "Form";
 
@@ -35,7 +36,6 @@ class Login extends CI_Controller {
                 $this->session->email = $data['user_info']['email'];
                 echo $this->session->name . ' from session';
             }
-//            print_r($data);
             $this->load->view('templates/header', $data);
             $this->load->view('pages/home');
             $this->load->view('templates/footer', $data);

@@ -9,8 +9,8 @@
         <meta property="og:title"         content="Your Website Title" />
         <meta property="og:description"   content="Your description" />
         <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-        <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
-        <link rel="stylesheet" href="./css/main.css">
+        <!--<link rel="stylesheet" href="./css/main.css">-->
+        <?php echo link_tag('css/main.css');?>
         <script src="https://kit.fontawesome.com/6cfa4c0aa7.js" crossorigin="anonymous"></script>
     </head>
     <body>
